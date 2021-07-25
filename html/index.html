@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Search comment</title>
+</head>
+<body>
+    <div class="horizontalElements">
+        <div>
+            <input type="text" id="searchField">
+            <input type="button" disabled id="search" value="Поиск">
+        </div>
+        <div>
+            <form action="../php/download_blog_list.php" method="POST">
+                <input type="submit" value="Загрузить записи постов и комментариев">
+            </form>
+        </div>
+    </div>
+
+    <div id="resultSet">
+       
+    </div>
+
+    <script type="text/javascript" src="../script/script.js"></script>
+</body>
+</html>
